@@ -41,12 +41,17 @@ const MobileNavber = () => {
   );
 
   return (
-    <div className=" bg-white block md:hidden z-10 fixed top-0 w-full p-5   shadow-md ">
-      <div className="flex justify-between    ">
-        <div className=" font-semibold w-[170px] h-[40px] px-2  rounded-md  ">
-          <Link to="/">
+    <div className=" bg-white block md:hidden z-10 fixed top-0 w-full   shadow-md ">
+      <div className="flex justify-between  items-center  ">
+        <div className="flex gap-2">
+          <Link className="flex items-center justify-center " to="/">
             {" "}
-            <img className="w-ful h-full" src={logo} alt="" />
+            <div className=" font-semibold w-[80px] h-[80px]  ">
+              <img className="w-ful h-full" src={logo} alt="" />{" "}
+            </div>
+            <p className="text-2xl font-semibold text-primary">
+              Bornobi Properties
+            </p>
           </Link>
         </div>
         <button
@@ -66,7 +71,7 @@ const MobileNavber = () => {
       <div className={` ${isMenuOpen ? "block" : "hidden"}   `}>
         {/* Menu Content */}
         <div>
-          <ul className="space-y-2 ">
+          <ul className="space-y-2 mx-4">
             <li>{routing}</li>
           </ul>
         </div>

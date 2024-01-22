@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.jpeg";
 const Navbar = () => {
   return (
-    <div className="hidden lg:block shadow-lg">
-      <div className="max-w-7xl mx-auto ">
+    <div className="hidden md:block shadow-lg fixed top-0 w-full bg-white z-10">
+      <div className="md:max-w-4xl lg:max-w-7xl mx-auto ">
         <div className=" flex justify-between ">
           <div className="flex gap-3 items-center justify-center">
             <div className="w-28 h-24">

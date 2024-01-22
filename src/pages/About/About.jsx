@@ -1,10 +1,12 @@
 import React from "react";
 import Headding from "../../components/Heading/Heading";
-import Pragrap from "../../components/Pragrap/Pragrap";
+
 import img from "../../assets/img/property-1.jpg";
 import img2 from "../../assets/img/property-2.jpg";
 import img3 from "../../assets/img/property-4.jpg";
 import img4 from "../../assets/img/property-5.jpg";
+import Pragraph from "./../../components/Pragraph/Pragraph";
+
 const pragrapContent = [
   {
     id: 1,
@@ -54,19 +56,36 @@ const imageProperty = [
 
 const About = () => {
   return (
-    <div className="max-5 md:max-w-7xl md:mx-auto py-10">
-      <Headding props={"About"} />
-      <div className="flex gap-10 py-7">
-        <div className=" w-[60%] ">
+    <div className="mx-4 md:max-w-4xl lg:max-w-7xl md:mx-auto mt-10 lg:mt-24  ">
+      <Headding className={""} props={"About"} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:py-7">
+        <div className=" ">
           {pragrapContent.map((data) => {
-            return <Pragrap key={data.id} props={data.title} />;
+            return <Pragraph key={data.id} props={data.title} />;
           })}
+          <div className="flex md:gap-4 flex-col md:flex-row md:mt-3">
+            <button className="text-white bg-primary hover:bg-blue-400 duration-500 flex w-full py-3  lg:py-4 my-4 font-semibold rounded-md shadow-md items-center justify-center">
+              Submit
+            </button>{" "}
+            <button className="text-white bg-primary hover:bg-blue-400 duration-500 flex w-full py-3  lg:py-4 md:my-4 font-semibold rounded-md shadow-md items-center justify-center">
+              Submit
+            </button>
+          </div>
         </div>
-        <div className="grid grid-cols-2 gap-6 w-[40%]">
+        <div className="grid grid-cols-2 gap-6 ">
           {imageProperty.map((image) => {
             return (
-              <div className="w-full h-44" key={image.id}>
-                <img className="w-full h-full" src={image.image} alt="" />
+              <div key={image.id}>
+                <div className="relative group">
+                  <div className="w-full h-44 md:h-64">
+                    <img
+                      className="w-full h-full rounded-md"
+                      src={image.image}
+                      alt=""
+                    />
+                  </div>
+                  <div className="absolute inset-0 flex  items-end opacity-0 group-hover:opacity-65 group-hover:bg-black rounded-md transition duration-700 ease-in-out" />
+                </div>
               </div>
             );
           })}

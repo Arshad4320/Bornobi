@@ -5,7 +5,7 @@ const Headding = ({ props, className }) => {
     <div>
       <div>
         <h3
-          className={`text-5xl font-semibold py-5  text-primary ${className}`}
+          className={`text-3xl md:text-4xl lg:text-5xl font-semibold py-5  text-primary ${className}`}
         >
           {props}
         </h3>

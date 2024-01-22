@@ -32,7 +32,7 @@ const Carusol = () => {
   };
   return (
     <>
-      <div className="  mt-24">
+      <div className=" mt-20">
         <div className="group col-span-2">
           <Swiper
             autoplay={{

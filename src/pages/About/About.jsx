@@ -56,7 +56,7 @@ const imageProperty = [
 
 const About = () => {
   return (
-    <div className="mx-4 md:max-w-4xl lg:max-w-7xl md:mx-auto mt-10 lg:mt-24  ">
+    <div className="mx-4 md:max-w-4xl lg:max-w-7xl md:mx-auto pb-10 mt-24  ">
       <Headding className={""} props={"About"} />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:py-7">
         <div className=" ">

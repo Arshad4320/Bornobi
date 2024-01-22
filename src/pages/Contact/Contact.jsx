@@ -39,7 +39,7 @@ const contactDetails = [
 
 const Contact = () => {
   return (
-    <div className="mx-4 md:max-w-4xl lg:max-w-7xl md:mx-auto  mt-10 lg:mt-24 ">
+    <div className="mx-4 md:max-w-4xl lg:max-w-7xl md:mx-auto   mt-24 pb-20">
       <Headding className={"text-center mb-10"} props={"Contact"} />
       <div className="grid gap-7 grid-cols-1 lg:grid-cols-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 ">

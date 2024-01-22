@@ -41,7 +41,7 @@ const MobileNavber = () => {
   );
 
   return (
-    <div className=" bg-white block md:hidden   p-4 0  shadow-md ">
+    <div className=" bg-white block md:hidden z-10 fixed top-0 w-full p-5   shadow-md ">
       <div className="flex justify-between    ">
         <div className=" font-semibold w-[170px] h-[40px] px-2  rounded-md  ">
           <Link to="/">

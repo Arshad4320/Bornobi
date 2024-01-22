@@ -6,7 +6,7 @@ import img3 from "../../assets/img/management.png";
 import Headding from "../../components/Heading/Heading";
 const Service = () => {
   return (
-    <div className="mx-4 md:max-w-4xl  lg:max-w-7xl md:mx-auto  mt-10 lg:mt-24 pb-10 ">
+    <div className="mx-4 md:max-w-4xl  lg:max-w-7xl md:mx-auto   mt-24 pb-10 ">
       <Headding className={"text-center mb-10"} props={"Service"} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
         <div className="rounded-md shadow-md border-y-2 hover:shadow-lg border-y-blue-600 hover:bg-blue-600 duration-500 hover:text-white p-6">

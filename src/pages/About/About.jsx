@@ -69,9 +69,11 @@ const About = () => {
                 Rent and Rooms
               </button>
             </a>{" "}
-            <button className="text-white bg-primary hover:bg-blue-400 duration-500 flex w-full py-3  lg:py-4 md:my-4 font-semibold rounded-md shadow-md items-center justify-center">
-              Submit
-            </button>
+            <a className="w-full" href="http://www.rapidhandyworks.com/">
+              <button className="text-white bg-primary hover:bg-blue-400 duration-500 flex w-full py-3  lg:py-4 md:my-4 font-semibold rounded-md shadow-md items-center justify-center">
+                Rapid Hand Works
+              </button>
+            </a>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-6 ">

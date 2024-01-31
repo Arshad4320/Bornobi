@@ -41,7 +41,7 @@ const MobileNavber = () => {
   );
 
   return (
-    <div className=" bg-white block md:hidden z-10 fixed top-0 w-full   shadow-md ">
+    <div className=" bg-white block md:hidden z-20 fixed top-0 w-full   shadow-md ">
       <div className="flex justify-between  items-center  ">
         <div className="flex gap-2">
           <Link className="flex items-center justify-center " to="/">
@@ -68,7 +68,11 @@ const MobileNavber = () => {
         </button>
       </div>
       {/* Menu */}
-      <div className={` ${isMenuOpen ? "block" : "hidden"}   `}>
+      <div
+        className={`absolute bg-white w-full duration-700  ${
+          isMenuOpen ? "right-0 " : "-right-[1000px] "
+        }   `}
+      >
         {/* Menu Content */}
         <div>
           <ul className="space-y-2 mx-4">

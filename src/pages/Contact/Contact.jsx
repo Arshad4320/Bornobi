@@ -9,8 +9,7 @@ const contactDetails = [
   {
     id: 1,
     title: " Address",
-    description:
-      "37 Sceptre Place Newcastle Upon Tyne United Kingdom Ne46tw Elswick",
+    description: "138 Hartington Street, Newcastle upon Tyne,  NE4 6PS",
     icon: <IoLocationOutline />,
   },
   {

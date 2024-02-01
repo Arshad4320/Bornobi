@@ -2,9 +2,9 @@ import React from "react";
 import Headding from "../../components/Heading/Heading";
 
 import img from "../../assets/img/property-1.jpg";
-import img2 from "../../assets/img/property-2.jpg";
-import img3 from "../../assets/img/property-4.jpg";
-import img4 from "../../assets/img/property-5.jpg";
+import img2 from "../../assets/img/electrician.avif";
+import img3 from "../../assets/img/Handy.jpg";
+import img4 from "../../assets/img/management.jpg";
 import Pragraph from "./../../components/Pragraph/Pragraph";
 
 const pragrapContent = [
@@ -66,12 +66,12 @@ const About = () => {
           <div className="flex md:gap-4 flex-col md:flex-row md:mt-3">
             <a className="w-full" href="http://rentandrooms.com/">
               <button className="text-white bg-primary hover:bg-blue-400 duration-500 flex w-full py-3  lg:py-4 my-4 font-semibold rounded-md shadow-md items-center justify-center">
-                Rent and Rooms
+                Rent A Room
               </button>
             </a>{" "}
             <a className="w-full" href="http://www.rapidhandyworks.com/">
               <button className="text-white bg-primary hover:bg-blue-400 duration-500 flex w-full py-3  lg:py-4 md:my-4 font-semibold rounded-md shadow-md items-center justify-center">
-                Rapid Hand Works
+                Book A Handyman
               </button>
             </a>
           </div>

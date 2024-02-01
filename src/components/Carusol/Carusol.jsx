@@ -1,9 +1,24 @@
 import React from "react";
 
-import img from "../../../public/assets/img/slide-1.jpg";
-import img2 from "../../../public/assets/img/slide-2.jpg";
-import img3 from "../../../public/assets/img/post-single-1.jpg";
-import img4 from "../../../public/assets/img/post-single-2.jpg";
+import img from "../../../public/assets/img/slider.jpg";
+import img2 from "../../../public/assets/img/slider2.jpg";
+import img3 from "../../../public/assets/img/slider3.jpg";
+import img4 from "../../../public/assets/img/post-single-1.jpg";
+import img5 from "../../../public/assets/img/slider4.jpg";
+import img6 from "../../../public/assets/img/slider5.jpg";
+import img7 from "../../../public/assets/img/slider7.jpg";
+import img8 from "../../../public/assets/img/slider8.jpg";
+
+const image = [
+  { id: 1, img: img },
+  { id: 2, img: img2 },
+  { id: 3, img: img3 },
+  { id: 4, img: img4 },
+  { id: 5, img: img5 },
+  { id: 6, img: img6 },
+  { id: 7, img: img7 },
+  { id: 8, img: img8 },
+];
 
 import { useRef } from "react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -48,49 +63,24 @@ const Carusol = () => {
             className="mySwiper mx-auto w-[100%]"
             speed={1500}
           >
-            {/* slider one */}
-            <SwiperSlide className="bg-[#EEEEEE] ">
-              <div className="relative text-white">
-                <img src={img} alt="" className="h-[50vh] md:h-[90vh] w-full" />
-                <span className="absolute top-0 bg-black left-0 opacity-10 inset-0"></span>
-                <div className="absolute left-5 top-[30%] ml-14 w-[65%]"></div>
-              </div>
-            </SwiperSlide>
+            {/* slider  */}
+            {image.map((img) => {
+              return (
+                <SwiperSlide key={img.id} className="bg-[#EEEEEE] ">
+                  <div className="relative text-white">
+                    <img
+                      src={img.img}
+                      alt=""
+                      className="h-[50vh] md:h-[90vh] w-full"
+                    />
+                    <span className="absolute top-0 bg-black left-0 opacity-10 inset-0"></span>
+                    <div className="absolute left-5 top-[30%] ml-14 w-[65%]"></div>
+                  </div>
 
-            {/* slider two */}
-            <SwiperSlide className="tranp bg-[#EEEEEE]">
-              <div className="relative text-white">
-                <img
-                  src={img2}
-                  alt=""
-                  className="h-[50vh] md:h-[90vh] w-full"
-                />
-                <span className="absolute top-0 bg-black left-0 opacity-10 inset-0"></span>
-                <div className="absolute left-5 top-[30%] ml-14 w-[65%]"></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="tranp bg-[#EEEEEE]">
-              <div className="relative text-white">
-                <img
-                  src={img4}
-                  alt=""
-                  className="h-[50vh] md:h-[90vh] w-full"
-                />
-                <span className="absolute top-0 bg-black left-0 opacity-10 inset-0"></span>
-                <div className="absolute left-5 top-[30%] ml-14 w-[65%]"></div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="tranp bg-[#EEEEEE]">
-              <div className="relative text-white">
-                <img
-                  src={img3}
-                  alt=""
-                  className="h-[50vh] md:h-[90vh] w-full"
-                />
-                <span className="absolute top-0 bg-black left-0 opacity-10 inset-0"></span>
-                <div className="absolute left-5 top-[30%] ml-14 w-[65%]"></div>
-              </div>
-            </SwiperSlide>
+                  <div className="absolute inset-0 flex  items-end opacity-50 bg-black rounded-md transition duration-700 ease-in-out"></div>
+                </SwiperSlide>
+              );
+            })}
 
             {/* slider button */}
             <div className="mt-5 flex items-center justify-center gap-3 text-center">

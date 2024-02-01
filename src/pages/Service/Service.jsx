@@ -80,7 +80,7 @@ const Service = () => {
           </h3>
           <p className="text-justify font-normal text-lg ">
             All our handymen are highly experienced, skilled, and trained in all
-            aspects of in-home maintenance and repairs.
+            aspects of in-uk maintenance and repairs.
           </p>
           <div>
             <p>

@@ -142,10 +142,10 @@ const Service = () => {
             Plumbers
           </h3>
           <p className="text-justify font-normal text-lg ">
-            Our plumbers are some of the best in London. We have all the latest
-            equipment and training to ensure that whether you need a sink
-            unblocked, or a new shower system installed, the job will be done
-            with safety, quality, and longevity in mind.
+            Our plumbers are some of the best in london local area. We have all
+            the latest equipment and training to ensure that whether you need a
+            sink unblocked, or a new shower system installed, the job will be
+            done with safety, quality, and longevity in mind.
           </p>
           <div>
             <p>

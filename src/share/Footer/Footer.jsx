@@ -22,8 +22,8 @@ const Footer = () => {
               Email - info@bornobiproperties.co.uk
             </p>
             <p className="hover:text-gray-400 font-medium transition duration-500 text-white mb-2">
-              Office Address - 37 Sceptre Place Newcastle Upon Tyne United
-              Kingdom Ne46tw Elswick
+              Office Address - 138 Hartington Street, Newcastle upon Tyne, NE4
+              6PS
             </p>
           </div>
         </div>

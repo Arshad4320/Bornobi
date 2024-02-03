@@ -1,11 +1,11 @@
 import React from "react";
 
-import img from "../../../public/assets/img/slider.jpg";
+import img from "../../../public/assets/img/slider.avif";
 import img2 from "../../../public/assets/img/slider2.jpg";
 import img3 from "../../../public/assets/img/slider3.jpg";
 import img4 from "../../../public/assets/img/post-single-1.jpg";
-import img5 from "../../../public/assets/img/slider4.jpg";
-import img6 from "../../../public/assets/img/slider5.jpg";
+import img5 from "../../../public/assets/img/slider4.avif";
+import img6 from "../../../public/assets/img/slider5.avif";
 import img7 from "../../../public/assets/img/slider7.jpg";
 import img8 from "../../../public/assets/img/slider8.jpg";
 

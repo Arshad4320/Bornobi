@@ -35,30 +35,11 @@ const pragrapContent = [
   },
 ];
 
-const imageProperty = [
-  {
-    id: 1,
-    image: img,
-  },
-  {
-    id: 2,
-    image: img2,
-  },
-  {
-    id: 3,
-    image: img3,
-  },
-  {
-    id: 4,
-    image: img4,
-  },
-];
-
 const About = () => {
   return (
     <div className="mx-4 md:max-w-4xl lg:max-w-7xl md:mx-auto pb-10 mt-16 lg:mt-24  ">
       <Headding className={"text-center"} props={"About"} />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:py-7">
+      <div className="grid grid-cols-1  gap-10 md:py-7">
         <div className=" ">
           {pragrapContent.map((data) => {
             return <Pragraph key={data.id} props={data.title} />;
@@ -75,24 +56,6 @@ const About = () => {
               </button>
             </a>
           </div>
-        </div>
-        <div className="grid grid-cols-2 gap-6 ">
-          {imageProperty.map((image) => {
-            return (
-              <div key={image.id}>
-                <div className="relative group">
-                  <div className="w-full h-44 md:h-64">
-                    <img
-                      className="w-full h-full rounded-md"
-                      src={image.image}
-                      alt=""
-                    />
-                  </div>
-                  <div className="absolute inset-0 flex  items-end opacity-0 group-hover:opacity-65 group-hover:bg-black rounded-md transition duration-700 ease-in-out" />
-                </div>
-              </div>
-            );
-          })}
         </div>
       </div>
     </div>
